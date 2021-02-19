@@ -72,7 +72,7 @@ class _MyAppState extends State<MyApp> {
       if (user == null) {
         await auth
             .signInWithEmailAndPassword(
-                email: '$myID@archive.io', password: 'aVerySecurePassword')
+                email: 'yourEmail', password: 'yourPassword')
             .catchError((e) {
           if ('$e'.contains('user-not-found')) createAccount('');
         }).then((us) => myID = user.email.split('@').first);
