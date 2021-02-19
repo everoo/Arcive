@@ -68,10 +68,8 @@ Stream stream = FirebaseFirestore.instance
 Stream<DocumentSnapshot> accountStream =
     FirebaseFirestore.instance.collection('0000').doc(myID).snapshots();
 
-String unitId = 'ca-app-pub-2732851918745448/' +
-    ((Platform.isIOS) ? '5606896116' : '4937291206');
-String appID = 'ca-app-pub-2732851918745448~' +
-    ((Platform.isIOS) ? '9909103202' : '7563454543');
+String unitId = 'admob unit id';
+String appID = 'admob app id');
 
 extension CapExtension on String {
   String get capitalizeFirst => '${this[0].toUpperCase()}${this.substring(1)}';
